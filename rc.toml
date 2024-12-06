@@ -1,0 +1,15 @@
+[settings]
+base_url = "http://localhost:7900"
+output = "./output/"
+load_env = ".env"
+include = ["./hc/"]
+
+[req.default]
+path = "/test"
+method = "POST"
+body = """
+{
+  "data": 123,
+  "token": "secret"
+}
+"""
